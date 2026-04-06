@@ -201,12 +201,11 @@
             </div>
         </main>
     </div>
-
-    <script async src="https://widgetv3.bandsintown.com/main.min.js"></script>
+<script async src="https://widgetv3.bandsintown.com/main.min.js"></script>
     <script async src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
 
     <script type="text/javascript">
-        // LOAD BANDSINTOWN
+        // LOAD BANDSINTOWN (Cleaned up version)
         window.addEventListener('load', function() {
             const bit = document.createElement('a');
             bit.className = "bit-widget-initializer";
@@ -216,6 +215,13 @@
             bit.setAttribute('data-text-color', 'rgba(227,218,201,1)');
             bit.setAttribute('data-event-ticket-cta-bg-color', 'rgba(74,112,85,1)');
             bit.setAttribute('data-app-id', '635a84947529806f3ad636de52a32b6e');
+            
+            // HIDING THE EXTRA CLUTTER
+            bit.setAttribute('data-event-rsvp-position', 'hidden');
+            bit.setAttribute('data-play-my-city-position', 'hidden');
+            bit.setAttribute('data-follow-section-position', 'hidden');
+            bit.setAttribute('data-want-a-show-near-you-position', 'hidden');
+            
             document.getElementById('bit-container').appendChild(bit);
         });
 
@@ -233,6 +239,5 @@
                 });
             }
         });
-    </script>
-</body>
+    </script></body>
 </html>
