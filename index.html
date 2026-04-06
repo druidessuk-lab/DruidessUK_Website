@@ -26,7 +26,10 @@
       "name": "Druidess",
       "alternateName": "Druidess UK",
       "genre": ["Heavy Psych", "Doom Metal", "Metal", "Heavy Metal"],
-      "location": { "@type": "Place", "name": "Newcastle upon Tyne, UK" },
+      "location": {
+        "@type": "Place",
+        "name": "Newcastle upon Tyne, UK"
+      },
       "url": "https://druidessuk.github.io/",
       "logo": "https://druidessuk.github.io/Druidess_Logo.png",
       "member": [
@@ -52,6 +55,7 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
     <style>
+        /* Color Palette & Fonts */
         :root {
             --bg-off-black: #161616;
             --header-black: #000000;
@@ -76,6 +80,7 @@
 
         a { color: var(--witchy-green); text-decoration: none; transition: color 0.3s ease; }
         a:hover { color: var(--bone-text); }
+
         .social-links a, .streaming-links a, #contact a { color: var(--bone-text); }
         .social-links a:hover, .streaming-links a:hover, #contact a:hover { color: var(--witchy-green); }
 
@@ -106,35 +111,27 @@
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 20px; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
-        .store-grid { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: flex-start; }
-        .store-item { flex: 1 1 300px; max-width: 320px; text-align: center; margin: 0 auto; min-height: 400px; }
+        .store-grid { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: flex-start; min-height: 400px; }
+        .store-item { flex: 1 1 300px; max-width: 320px; text-align: center; margin: 0 auto; }
 
         .streaming-links { list-style: none; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
 
         /* MAILCHIMP STYLING */
-        #mc_embed_signup { background: transparent !important; clear: left; font-family: 'Roberta', serif !important; width: 100% !important; max-width: 500px; margin: 0 auto 30px auto; }
+        #mc_embed_signup { background: transparent !important; clear: left; font-family: 'Roberta', 'Times New Roman', serif !important; width: 100% !important; max-width: 500px; margin: 0 auto 30px auto; }
         #mc_embed_signup h2 { color: var(--witchy-green) !important; padding: 0; margin: 15px 0; font-size: 1.5em; border: none; }
         #mc_embed_signup input.email { background-color: var(--bg-off-black); border: 1px solid var(--witchy-green); color: var(--bone-text); padding: 10px; width: 100%; box-sizing: border-box; }
-       #mc_embed_signup .button {
-    background-color: var(--witchy-green) !important;
-    color: #FFFFFF !important; 
-    border: none !important;
-    border-radius: 4px !important;
-    padding: 0 20px !important;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 100%;
-    height: 45px !important;
-    
-    /* THE FONT FIX */
-    font-family: 'Roberta', 'Times New Roman', serif !important;
-    font-size: 18px !important; /* Roberta usually needs to be a bit bigger to be readable */
-    
-    line-height: 40px !important; /* Adjust this 40px up or down to center Roberta vertically */
-    display: block !important;
-    vertical-align: middle !important;
-    overflow: visible !important;
-}
+        #mc_embed_signup .button { 
+            background-color: var(--witchy-green) !important; 
+            color: #FFFFFF !important; 
+            border: none !important; 
+            padding: 0 20px !important; 
+            text-transform: uppercase; 
+            cursor: pointer; 
+            width: 100%; 
+            height: 45px !important; 
+            line-height: 42px !important; 
+            overflow: visible !important;
+        }
         #mc_embed_signup .indicates-required, .refferal_badge { display: none !important; }
     </style>
 </head>
@@ -159,6 +156,7 @@
                 <section id="about">
                     <h2>About</h2>
                     <img src="Druidess_BandPhoto.jpg" alt="Druidess Band Photo" style="margin-bottom: 20px; max-width: 100%;">
+                    
                     <div class="social-links" style="margin-bottom: 20px;">
                         <strong style="color: var(--witchy-green);">Follow us:</strong>
                         <a href="https://www.instagram.com/druidessuk/" target="_blank">Instagram</a> | 
@@ -166,10 +164,12 @@
                         <a href="https://www.tiktok.com/@druidessuk" target="_blank">TikTok</a> |
                         <a href="https://www.youtube.com/@Druidessuk" target="_blank">YouTube</a>
                     </div>
+
                     <div class="bio">
                         <p>Druidess are purveyors of heavy-psych and doom, worshipping at the altar of Iommi to bring a heavy-psych doom party interspersed with the vibe of a basement lounge bar.</p>
                         <p>Shonagh Brown - Vocals, Bass<br>Daniel Downing - Guitar, Saxophone<br>Sam Armstrong - Drums<br>James Hill - Keys</p>
                     </div>
+
                     <div id="mc_embed_signup">
                         <form action="https://gmail.us9.list-manage.com/subscribe/post?u=65a0f1de66af62df99cd96b9d&id=177cfeddcd&f_id=00b057e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                             <h2>Join our mailing list</h2>
@@ -177,9 +177,10 @@
                             <div style="margin-top: 10px;"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
                         </form>
                     </div>
+
                     <h3>Watch the Official Music Video for Knightingales</h3>
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/KgeZ7jro1ho?si=tijejiu0u6SJrZIW" title="YouTube video player" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/KgeZ7jro1ho?si=tijejiu0u6SJrZIW" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </section>
 
@@ -188,6 +189,7 @@
                     <div style="margin-bottom: 25px;">
                         <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=4243420146/size=small/bgcol=161616/linkcol=4A7055/transparent=true/" seamless></iframe>
                     </div>
+
                     <h3 class="music-header">Stream Druidess</h3>
                     <ul class="streaming-links">
                         <li><a href="https://open.spotify.com/artist/1m3NoalemXs2eiA2G5NSOs" target="_blank">Spotify</a></li>
@@ -200,14 +202,26 @@
 
                 <section id="gigs">
                     <h2>Gigs</h2>
-                    <div id="bit-container"></div>
+                    <div id="bit-container" style="min-height: 200px;">
+                        <a class="bit-widget-initializer" 
+                           data-artist-name="id_15591485" 
+                           data-background-color="rgba(22,22,22,1)" 
+                           data-separator-color="rgba(74,112,85,1)" 
+                           data-text-color="rgba(227,218,201,1)" 
+                           data-event-ticket-cta-bg-color="rgba(74,112,85,1)" 
+                           data-app-id="635a84947529806f3ad636de52a32b6e"
+                           data-event-rsvp-position="hidden"
+                           data-play-my-city-position="hidden"
+                           data-follow-section-position="hidden"
+                           data-want-a-show-near-you-position="hidden"></a>
+                    </div>
                 </section>
 
                 <section id="store">
                     <h2>Store</h2>
                     <div class="store-grid">
-                        <div class="store-item" id='product-component-1775484342023'></div>
-                        <div class="store-item" id='product-component-1775484419772'></div>
+                        <div id='product-component-1775484342023'></div>
+                        <div id='product-component-1775484419772'></div>
                     </div>
                 </section>
 
@@ -220,45 +234,29 @@
             </div>
         </main>
     </div>
-<script async src="https://widgetv3.bandsintown.com/main.min.js"></script>
+
+    <script async src="https://widgetv3.bandsintown.com/main.min.js"></script>
     <script async src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-    <sc// LOAD BANDSINTOWN
-window.addEventListener('load', function() {
-    const bit = document.createElement('a');
-    bit.className = "bit-widget-initializer";
-    bit.setAttribute('data-artist-name', 'id_15591485');
-    bit.setAttribute('data-background-color', 'rgba(22,22,22,1)');
-    bit.setAttribute('data-separator-color', 'rgba(74,112,85,1)');
-    bit.setAttribute('data-text-color', 'rgba(227,218,201,1)');
-    bit.setAttribute('data-event-ticket-cta-bg-color', 'rgba(74,112,85,1)');
-    bit.setAttribute('data-app-id', '635a84947529806f3ad636de52a32b6e');
-    
-    // FORCE FONT INHERITANCE
-    bit.setAttribute('data-font', 'Roberta'); 
-    
-    bit.setAttribute('data-event-rsvp-position', 'hidden');
-    bit.setAttribute('data-play-my-city-position', 'hidden');
-    bit.setAttribute('data-follow-section-position', 'hidden');
-    bit.setAttribute('data-want-a-show-near-you-position', 'hidden');
-    
-    document.getElementById('bit-container').appendChild(bit);
-});
-
-
-        // LOAD SHOPIFY
-        window.addEventListener('load', function() {
-            if (window.ShopifyBuy) {
-                var client = ShopifyBuy.buildClient({ domain: '80u6ky-hq.myshopify.com', storefrontAccessToken: 'a1779f914b598e80791ded993e042ab1' });
-                ShopifyBuy.UI.onReady(client).then(function(ui) {
-                    var options = { "product": { "styles": { 
-                        "button": { "color": "#e3dac9", "background-color": "#4a7055", ":hover": { "background-color": "#43654d" } },
-                        "img": { "width": "280px", "height": "280px" }
-                    }, "layout": "vertical", "contents": { "img": true, "title": true, "price": true, "options": true } } };
-                    ui.createComponent('product', { id: '15569783718270', node: document.getElementById('product-component-1775484342023'), options: options });
-                    ui.createComponent('product', { id: '15569795252606', node: document.getElementById('product-component-1775484419772'), options: options });
-                });
-            }
-        });
-    </script></body>
+    <script type="text/javascript">
+        // SHOPIFY INITIALIZER
+        window.ShopifyBuyInit = function() {
+            var client = ShopifyBuy.buildClient({ domain: '80u6ky-hq.myshopify.com', storefrontAccessToken: 'a1779f914b598e80791ded993e042ab1' });
+            ShopifyBuy.UI.onReady(client).then(function(ui) {
+                var options = { "product": { "styles": { 
+                    "button": { "color": "#e3dac9", "background-color": "#4a7055", ":hover": { "background-color": "#43654d" } },
+                    "img": { "width": "280px", "height": "280px" }
+                }, "layout": "vertical", "contents": { "img": true, "title": true, "price": true, "options": true } } };
+                ui.createComponent('product', { id: '15569783718270', node: document.getElementById('product-component-1775484342023'), options: options });
+                ui.createComponent('product', { id: '15569795252606', node: document.getElementById('product-component-1775484419772'), options: options });
+            });
+        };
+        // Manual check if script already loaded
+        if (window.ShopifyBuy && window.ShopifyBuy.UI) { ShopifyBuyInit(); }
+        
+        // Mailchimp setup
+        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
+    </script>
+</body>
 </html>
