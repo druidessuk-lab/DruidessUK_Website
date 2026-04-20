@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druidess | Trip Meadow - EPK</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 4rem 2rem 2rem 2rem;
+            background-color: #0a0a0a;
+        }
+
+        .logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h2 {
+            color: #888888;
+            font-weight: 300;
+            margin-top: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            color: #ffffff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Bio Grid Layout - Vertically Centered Artwork */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 2.5rem;
+            align-items: center; /* Vercially centers contents */
+            margin-top: 1.5rem;
+        }
+
+        .album-art {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        /* Full Width Band Photo */
+        .band-photo {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Download List */
+        ul.asset-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.asset-list li {
+            background: #1e1e1e;
+            margin-bottom: 0.8rem;
+            padding: 1.2rem;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .download-link {
+            text-decoration: none;
+            border: 1px solid #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .download-link:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Press Quotes */
+        .quote-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-left: 4px solid #444;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .quote-attribution {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: bold;
+            color: #888;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* Bandsintown Container */
+        .bit-widget {
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            padding: 4rem 0;
+            border-top: 1px solid #222;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .bio-grid {
+                grid-template-columns: 1fr;
+                align-items: center;
+            }
+            .album-art {
+                order: -1; /* Puts art above bio text on mobile */
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            ul.asset-list li {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Druidess_Logo.png" alt="Druidess Logo" class="logo">
+        <h2>Trip Meadow | Album EPK</h2>
+    </header>
+
+    <div class="container">
+        
+        <section id="album-info">
+            <h3>About "Trip Meadow"</h3>
+            <div class="bio-grid">
+                <div class="bio-text">
+                    <p><strong>Release Date:</strong> Friday 29th May 2026</p>
+                    <p><strong>Genre:</strong> Heavy Psych / Doom / Proto-Metal</p>
+                    <p>
+                        Trip Meadow is the debut album from Newcastle-upon-Tyne's Druidess. The band deliver a visceral sonic cocktail: Iommi-worshipping riffs, ethereal vocals with the grit of Joan Jett, the haunting psychedelic textures of Ray Manzarek - all propelled by the Dale Crover school of heavy-hitting percussion.
+                    </p>
+                    <p>
+                        Since the release of their 2024 EP Hermits and Mandrakes, Druidess have become a familiar face in the UK doom and stoner scenes, with appearances at the likes of Masters of the Riff, Byker Grave Festival, Tonehenge, Cosmic Vibration Festival and Fuzzness under their belt.
+                    </p>
+                    <p>
+                        They have shared stages with Castle Rat, Slomatics, Dopethrone and Margarita Witch Cult, with a confirmed feature in Metal Hammer magazine supporting previous coverage from the likes of Powerplay Magazine, The Obelisk and Outlaws of the Sun.
+                    </p>
+                </div>
+                <div class="bio-image">
+                    <img src="Druidess_TripmeadowCover.jpg" alt="Trip Meadow Album Artwork" class="album-art">
+                </div>
+            </div>
+        </section>
+
+        <img src="Druidess_BandPhoto.jpg" alt="Druidess Band Photo" class="band-photo">
+
+        <section id="video">
+            <h3>"Knightingales" Official Video</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="Knightingales Official Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="downloads">
+            <h3>Downloads</h3>
+            <ul class="asset-list">
+                <li><span>Music & Photos (Full Bundle)</span><a href="assets/Druidess_FullBundle.zip" download class="download-link">↓ Download ZIP</a></li>
+                <li><span>Photos Only (High-Res)</span><a href="assets/Druidess_Photos.zip" download class="download-link">↓ Download ZIP</a></li>
+                <li><span>Music Only (MP3)</span><a href="assets/Druidess_MP3s.zip" download class="download-link">↓ Download ZIP</a></li>
+                <li><span>Music Only (WAV)</span><a href="assets/Druidess_WAVs.zip" download class="download-link">↓ Download ZIP</a></li>
+                <li><span>Music Videos (MP4)</span><a href="assets/Druidess_Videos.zip" download class="download-link">↓ Download ZIP</a></li>
+            </ul>
+        </section>
+
+        <section id="press">
+            <h3>Press & Quotes</h3>
+            <div class="quote-card">
+                "In song and performance they display a self-awareness of craft that is no less a source of their potential"
+                <span class="quote-attribution">— The Obelisk</span>
+            </div>
+            <div class="quote-card">
+                "Druidess having the potential to go a long way within the UK Doom/Stoner Metal scene"
+                <span class="quote-attribution">— Outlaws of the Sun</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contact & Booking</h3>
+            <p>For press enquiries, guestlist requests, or booking:</p>
+            <p><strong>Email:</strong> <a href="mailto:druidess@gmail.com">druidess@gmail.com</a></p>
+            <p><strong>Socials:</strong> 
+                <a href="https://instagram.com/druidessuk" target="_blank">Instagram</a> | 
+                <a href="https://facebook.com/druidessuk" target="_blank">Facebook</a> | 
+                <a href="https://open.spotify.com/artist/1m3NoalemXs2eiA2G5NSOs" target="_blank">Spotify</a>
+            </p>
+        </section>
+
+        <section id="tour-dates">
+            <h3>TOUR DATES</h3>
+            <div class="bit-widget">
+                <a class="bit-widget-initializer"
+                    data-artist-name="id_15591485"
+                    data-background-color="rgba(22,22,22,1)"
+                    data-separator-color="rgba(74,112,85,1)"
+                    data-text-color="rgba(227,218,201,1)"
+                    data-event-ticket-cta-text-color="rgba(227,218,201,1)"
+                    data-event-ticket-cta-bg-color="rgba(74,112,85,1)"
+                    data-event-rsvp-position="hidden"
+                    data-follow-section-position="hidden"
+                    data-follow-section-alignment="center"
+                    data-follow-section-cta-text="FOLLOW"
+                    data-play-my-city-position="hidden"
+                    data-app-id="635a84947529806f3ad636de52a32b6e"
+                    data-bit-logo-color="rgba(227,218,201,1)"
+                ></a>
+                <script charset='utf-8' src='https://widget.bandsintown.com/main.min.js'></script>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Druidess. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
